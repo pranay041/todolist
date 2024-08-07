@@ -11,7 +11,7 @@
   ##Download or Clone the Repository:
 bash
 Copy code
-git clone [https://github.com/pranay041e/todolist]
+git clone [https://github.com/pranay041/todolist.git ](https://github.com/pranay041/todolist)
 Alternatively, you can download the ZIP file of the project and extract it to your desired location.
 
 ##Open the Project:
