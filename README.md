@@ -23,17 +23,24 @@ Navigate to the folder where you cloned or downloaded the project.
 Open the index.html file in your web browser. You can do this by double-clicking the file or by right-clicking it and selecting "Open with" and then choosing your preferred web browser.
 The application should open in your browser, and you can start adding tasks immediately.
 Usage
+
+
 ##Adding a Task:
 
 Enter your task in the input box where it says "Add your text."
 Click the "Add" button to add the task to your list.
+
+
 ##Marking a Task as Complete:
 
 Click on a task in the list to mark it as complete. The task will be crossed out, and the checkbox will be marked.
 
+
 ##Deleting a Task:
 
 Click the "×" button on the right side of a task to delete it from the list.
+
+
 ##Refreshing the Page:
 
 Your tasks will remain on the list even if you refresh the page or close and reopen your browser.
@@ -44,12 +51,8 @@ script.js: The JavaScript file that handles the functionality of adding, checkin
 images/: A folder containing the images for the checkbox icons.
 Customization
 Styling: You can customize the appearance of the To-Do List by editing the style.css file.
-##Functionality: You can add or modify features by editing the script.js file.
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute this project as you see fit.
 
-##Contributing
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
+##Functionality: You can add or modify features by editing the script.js file.
 
 ##Contact
 For any questions or suggestions, please contact [pranaynarkar04@gmail.com].
