@@ -3,35 +3,52 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-     }
-    
-     .container{
-        width: 100%;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #153677, #4e085f);
-        padding: 10px;
-        
-        }
-        .todo-app{
-            width: 100%;
-            max-width: 540px;
-            background: #fff;
-            margin: 100px auto 20px;
-            padding: 40px 30px 70px;
-            border-radius: 10px;
-        }
-        .todo-app h2 {
-            color: #002765;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+    /* Resets default margin and padding for all elements.
+       Applies the 'Poppins' font to all elements.
+       Sets box-sizing to border-box, which includes padding and border in the element's total width and height. */
+}
 
-        .todo-app h2 img {
-            width: 30px;
-            margin-left: 10px;
-        }
-.row{
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    /* Sets the container to take up the full width of the screen.
+       Ensures the container has a minimum height of the full viewport height.
+       Applies a diagonal gradient background from blue (#153677) to purple (#4e085f).
+       Adds 10px padding inside the container. */
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    /* Sets the to-do app's width to 100% of its container but limits it to a maximum width of 540px.
+       Applies a white background color.
+       Centers the app horizontally with auto left and right margins, and provides top and bottom margins.
+       Adds padding inside the app and rounds the corners with a 10px border radius. */
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Sets the heading color to a dark blue (#002765).
+       Uses flexbox for alignment, centering the heading and any children vertically.
+       Adds a 20px margin below the heading to separate it from content below. */
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+    /* Sets the width of the image next to the heading to 30px and adds a 10px left margin to space it from the text. */
+}
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,38 +56,53 @@
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+    /* Uses flexbox to align items in a row, with space between them.
+       Applies a light gray background (#edeef0) and rounds the corners with a 30px border radius.
+       Adds 20px padding to the left side and 25px margin below the row. */
 }
-        input{
-            flex: 1;
-            border: none;
-            outline: none;
-            background: transparent;
-            padding: 10px;
-            font-weight: 14px;
-        }
-button{
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    /* Makes the input field take up available space within its container using flexbox.
+       Removes the border and outline, making the background transparent.
+       Adds 10px padding inside the input and sets the font size to 14px. */
+}
+
+button {
     border: none;
     outline: none;
     background: #ff5954;
-    padding:  16px 50px;
+    padding: 16px 50px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    /* Removes the border and outline, sets the background color to red (#ff5954).
+       Adds padding inside the button, with 16px top/bottom and 50px left/right padding.
+       Sets the text color to white, font size to 16px, and changes the cursor to a pointer on hover.
+       Rounds the button corners with a 40px border radius. */
 }
 
 ul li {
     list-style: none;
     font-size: 17px;
-    padding:  12px 8px  12px 50px;
+    padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
-    
+    /* Removes the default list bullet points.
+       Sets the font size to 17px and adds padding inside the list items.
+       Disables text selection and changes the cursor to a pointer on hover.
+       Positions the list items relatively, allowing child elements to be positioned absolutely. */
 }
 
-ul li::before{
-    content:'';
+ul li::before {
+    content: '';
     position: absolute;
     height: 28px;
     width: 28px;
@@ -79,22 +111,27 @@ ul li::before{
     background-size: cover;
     background-position: center;
     top: 12px;
- left: 8px;
+    left: 8px;
+    /* Adds a circular checkbox icon before each list item using a pseudo-element.
+       Positions the icon absolutely within the list item.
+       The icon is 28x28px, with a background image of an unchecked box, positioned 12px from the top and 8px from the left. */
 }
-ul li.checked{
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
-
+    /* Changes the text color to gray (#555) and adds a line-through effect when the list item is marked as checked. */
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image: url(images/checked.png);
+    /* Changes the background image to a checked box icon when the list item is marked as checked. */
 }
 
 ul li span {
     position: absolute;
     right: 0;
-    top:  5px;
+    top: 5px;
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -102,8 +139,12 @@ ul li span {
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    
+    /* Positions the delete button (span) absolutely within the list item, at the top right.
+       Sets the button size to 40x40px, with a font size of 22px and gray text color (#555).
+       Centers the text vertically and horizontally, and rounds the button corners with a 50% border radius (making it circular). */
 }
-ul li span:hover{
+
+ul li span:hover {
     background: #edeef0;
+    /* Changes the background color of the delete button to light gray (#edeef0) when hovered over. */
 }

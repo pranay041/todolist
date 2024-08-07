@@ -2,26 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document. UTF-8 is a standard encoding that covers most characters from most languages. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures that the web page is responsive and scales appropriately on different devices, like mobile phones and tablets. -->
+
     <title>to-do list app</title>
+    <!-- The title of the web page, which will appear in the browser tab. -->
+
     <link rel="stylesheet" href="./style.css">
+    <!-- Links the external CSS file (style.css) to the HTML document for styling purposes. -->
 </head>
 <body>
     <div class="container">
+        <!-- A container div that wraps the entire to-do app, useful for styling and layout purposes. -->
+        
         <div class="todo-app">
+            <!-- Another div that specifically wraps the to-do list application content. -->
+
             <h2>To-Do-List <img src="./images/icon.png"></h2>
-        <div class="row">
-            <input type="text" id="input-box" placeholder="Add your text">
-        <button onclick="addTask()">Add</button>
-        </div>
-        <ul id="list-container">
-            <!-- <li class="checked">task1</li>
-            <li>task1</li>
-            <li>task1</li> -->
-        </ul>
+            <!-- The main heading of the to-do list app. The <img> tag includes an image (icon.png) next to the title. -->
+
+            <div class="row">
+                <!-- A row div to contain the input field and the add button, typically used for layout purposes. -->
+
+                <input type="text" id="input-box" placeholder="Add your text">
+                <!-- An input field where users can type in their to-do list items. The placeholder text provides a hint to the user. -->
+
+                <button onclick="addTask()">Add</button>
+                <!-- A button that triggers the `addTask()` JavaScript function when clicked, which will likely add the entered text to the list. -->
+            </div>
+            
+            <ul id="list-container">
+                <!-- An unordered list that will contain the to-do list items. -->
+                
+                <!-- The commented-out <li> elements are examples of tasks, one of which is marked as "checked" to indicate completion. 
+                     These are currently not displayed because they are commented out. -->
+                <!-- <li class="checked">task1</li>
+                <li>task1</li>
+                <li>task1</li> -->
+            </ul>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <!-- Links the external JavaScript file (script.js) to the HTML document for interactivity and logic handling. -->
 </body>
 </html>
