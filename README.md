@@ -8,6 +8,8 @@
   Delete Tasks: Users can delete tasks by clicking on the "×" button next to each task.
   Persistent Storage: The tasks are saved in the browser's local storage, so they remain even if the page is refreshed or reopened.
   Installation and Setup
+
+  
   ##Download or Clone the Repository:
 bash
 Copy code
