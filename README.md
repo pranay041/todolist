@@ -9,6 +9,10 @@ A simple and interactive Todo List application built using HTML, CSS, and JavaSc
 - **Mark Tasks as Complete**: Strike-through tasks that are done.
 - **Responsive Design**: Works on all devices, from desktops to mobile phones.
 
+## Demo
+
+Check out the live demo: [Todo List Demo](https://pranay041.github.io/todolist/)
+
 ## Installation
 
 1. **Clone the Repository**
